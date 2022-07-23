@@ -1,4 +1,6 @@
-
+/* eslint-disable react/no-unknown-property */
+/* eslint-disable @next/next/link-passhref */
+/* eslint-disable @next/next/no-img-element */
 import React from 'react';
 import Head from 'next/head';
 import styles from '../styles/work.module.css';

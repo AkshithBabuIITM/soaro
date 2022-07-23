@@ -1,12 +1,14 @@
-
+/* eslint-disable @next/next/link-passhref */
+/* eslint-disable @next/next/no-img-element */
+import Link from 'next/link';
 import React from 'react';
 import Head from 'next/head';
 import Image from 'next/image';
-import styles from '../styles/Resetstyle.module.css';
-import rsvg from '../public/reset.svg';
-import logo from '../public/logo.png';
+// import fsvg from '../public/forgot.svg';
+// import logo from '../public/logo.png';
+import styles from '../styles/Forgotstyle.module.css';
 
-function Reset() {
+function Forgot() {
   return (
     <div>
       <Head>
@@ -19,11 +21,11 @@ function Reset() {
         <div className={styles.box}>
           <div className={styles.image_container}>
             <div className={styles.logo_box}>
-              <Image src={logo} layout="responsive" alt="" />
+              <img src="logo.png" layout="responsive" alt="" />
             </div>
 
             <div className={styles.svg}>
-              <Image src={rsvg} layout="responsive" alt="" />
+              <img src="forgot.svg" layout="responsive" alt="" />
             </div>
           </div>
 
@@ -33,16 +35,15 @@ function Reset() {
               <div> - work with empathy</div>
             </div>
             <div className={styles.title}>
-              <div>Set Password</div>
+              <div>Forget Password</div>
             </div>
             <div className={styles.user_input}>
-              <div>New Password</div>
-              <input type="text" placeholder="" value="******" />
-              <div>Re Enter Password</div>
-              <input type="text" placeholder="" value="******" />
+              <input type="text" placeholder="Emp ID" />
             </div>
             <div className={styles.submit}>
-              <button>CONFIRM</button>
+              <Link href="/Reset-password">
+                <button>SEND PASSWORD LINK</button>
+              </Link>
             </div>
           </div>
         </div>
@@ -50,4 +51,5 @@ function Reset() {
     </div>
   );
 }
-export default Reset;
+
+export default Forgot;

@@ -1,4 +1,5 @@
-
+/* eslint-disable @next/next/no-img-element */
+/* eslint-disable @next/next/link-passhref */
 import React from 'react';
 import Head from 'next/head';
 import Down from '../container/Down.js';

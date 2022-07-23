@@ -1,4 +1,6 @@
-
+/* eslint-disable @next/next/link-passhref */
+/* eslint-disable @next/next/no-img-element */
+/* eslint-disable jsx-a11y/alt-text */
 import React from 'react';
 import Image from 'next/image';
 import styles from '../styles/Loginstyle.module.css';
