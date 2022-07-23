@@ -1,11 +1,12 @@
-
+/* eslint-disable @next/next/link-passhref */
+/* eslint-disable @next/next/no-img-element */
 import React from 'react';
 import Head from 'next/head';
 import Image from 'next/image';
 import styles from '../styles/Dashboard.module.css';
 import Down from '../container/Down.js';
 import Link from 'next/link';
-
+// import Lines from '../public/threelines.jpg';
 import { useState, useEffect } from 'react';
 function Dashboard() {
   const [st, setst] = useState(false);
